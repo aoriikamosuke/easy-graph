@@ -1,12 +1,14 @@
 #include <stdio.h>
 void main(void){
-    int  data[5];
+    int  data[5];//五個のグラフ
     int a,i,j,k;
 
+    //数値の読み込み
     for(a=0;a<5;a++){
         printf("9以下の数値を入力してください ");
         scanf("%d",&data[a]);
     }
+    //縦棒の生成
     for(i=10;i>0;i--){
         for(j=0;j<2;j++){
             if(j==0){
@@ -27,6 +29,7 @@ void main(void){
                 }
             }
         }
+        //グラフの生成
         for(a=0;a<5;a++){
                 printf("  ");
             if(i==(data[a]+1)){
@@ -50,6 +53,7 @@ void main(void){
         }
     printf("\n");
     }
+    //横棒の生成
     for(j=0;j<30;j++){
         if(j==0){
             k=i;
